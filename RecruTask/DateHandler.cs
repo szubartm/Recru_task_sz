@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecruTask
 {
     public class DateHandler
     {
-        
+
         Messenger messenger = new Messenger();
 
         DateFormatChecker dateFormatChecker = new DateFormatChecker();
@@ -21,7 +17,7 @@ namespace RecruTask
 
         public DateTime DateConverter(string date)
         {
-            
+
 
             bool isUS = false;
 
@@ -35,7 +31,7 @@ namespace RecruTask
                 }
                 else
                 {
-                    
+
                     isUS = true;
                 }
 
@@ -55,15 +51,15 @@ namespace RecruTask
                 else
                 {
                     Console.WriteLine(messenger.MessageIncorrectDateFormat());
-                    
+
                 }
 
             }
             throw new Exception(messenger.MessageIncorrectValue());
         }
-       
 
-      
+
+
         public string DatePrinter(DateTime userDateFirst, DateTime userDateSecond)
         {
             string toPrint = null;
@@ -77,7 +73,7 @@ namespace RecruTask
                 if (userDateFirst.Year < userDateSecond.Year)
                 {
                     toPrint = userDateFirst.ToString(currentCultureDatetimeFormat.ShortDatePattern) + "-" + userDateSecond.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-                    
+
                 }
                 else
                 {
@@ -115,6 +111,6 @@ namespace RecruTask
 
             return toPrint;
         }
-        
+
     }
 }

@@ -9,8 +9,8 @@ namespace RecruTask
         DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
 
         DateTime userDateTime1;
-        
-        
+
+
 
         public bool CheckIfUSFormatForDate(string date1)
         {
@@ -26,7 +26,7 @@ namespace RecruTask
             }
         }
 
-       
+
 
         public bool CheckIfCurrentFormatForDate(string date1)
         {
@@ -40,7 +40,7 @@ namespace RecruTask
             }
         }
 
-      
+
 
     }
 }

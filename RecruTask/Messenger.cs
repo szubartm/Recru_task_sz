@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RecruTask
+﻿namespace RecruTask
 {
-   public class Messenger
+    public class Messenger
     {
         string message;
         public string MessageForUSFormat(bool result)
@@ -22,10 +16,10 @@ namespace RecruTask
 
         public string MessageIncorrectDateFormat()
         {
-            return  message = "Incorrect date format. Changing format to default (dd/mm/yyyy)";
+            return message = "Incorrect date format. Changing format to default (dd/mm/yyyy)";
         }
 
-      
+
 
         public string MessageIncorrectValue()
         {
