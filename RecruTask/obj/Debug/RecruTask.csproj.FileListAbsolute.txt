@@ -1,0 +1,7 @@
+C:\Users\matsz\source\repos\RecruTask\RecruTask\bin\Debug\RecruTask.exe.config
+C:\Users\matsz\source\repos\RecruTask\RecruTask\bin\Debug\RecruTask.exe
+C:\Users\matsz\source\repos\RecruTask\RecruTask\bin\Debug\RecruTask.pdb
+C:\Users\matsz\source\repos\RecruTask\RecruTask\obj\Debug\RecruTask.csprojAssemblyReference.cache
+C:\Users\matsz\source\repos\RecruTask\RecruTask\obj\Debug\RecruTask.csproj.CoreCompileInputs.cache
+C:\Users\matsz\source\repos\RecruTask\RecruTask\obj\Debug\RecruTask.exe
+C:\Users\matsz\source\repos\RecruTask\RecruTask\obj\Debug\RecruTask.pdb
