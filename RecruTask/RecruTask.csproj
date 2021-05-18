@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateHandlerCurrentCulture.cs" />
-    <Compile Include="DateHandlerForUS.cs" />
+    <Compile Include="ExistingCultures.cs" />
+    <Compile Include="FormatHandler.cs" />
+    <Compile Include="DateFormats.cs" />
+    <Compile Include="DatePrinter.cs" />
+    <Compile Include="DateConverter.cs" />
     <Compile Include="Messenger.cs" />
-    <Compile Include="DateFormatChecker.cs" />
-    <Compile Include="DateHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

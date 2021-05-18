@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace RecruTask
 {
@@ -6,27 +7,36 @@ namespace RecruTask
     {
         static void Main(string[] args)
         {
-            DateHandler dateHandler = new DateHandler();
-            DateFormatChecker dateFormatChecker = new DateFormatChecker();
+            DateConverter dateConverter = new DateConverter();
+            DatePrinter datePrinter = new DatePrinter();
+            FormatHandler formatHandler = new FormatHandler();
+            DateFormats dateFormats = new DateFormats();
             Messenger messenger = new Messenger();
-            string us = null;
-            bool isUS = false;
-            string date1 = null;
-            string date2 = null;
+    
+            DateTimeFormatInfo cultureFormatInfo;
+            string result = null;
+ 
+            Console.WriteLine(messenger.MessageBeginning());
+            if (Console.ReadLine().Equals("yes"))
+            {
+                dateFormats.ShowAllDateFormats();
+                Console.WriteLine("");
+                Console.WriteLine(messenger.MessageTypeFormatShortcut());
+                result = Console.ReadLine();
 
+            }
 
-
-
-            Console.WriteLine("Enter a date: ");
-            date1 = Console.ReadLine();
-            date2 = Console.ReadLine();
-
-
-            var finalDate = dateHandler.DatePrinter(dateHandler.DateConverter(date1), dateHandler.DateConverter(date2));
+            cultureFormatInfo = formatHandler.DateFormatInfo(result);
+            
+            Console.WriteLine(messenger.MessageEnterDate());
+            var date1 = Console.ReadLine();
+            var date2 = Console.ReadLine();
+           
+            var finalDate = datePrinter.DatePrinting(dateConverter.DateConvertion(date1, cultureFormatInfo), dateConverter.DateConvertion(date2, cultureFormatInfo));
             Console.WriteLine(finalDate);
+           
+            
             Console.ReadLine();
-
-
 
         }
     }

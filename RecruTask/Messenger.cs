@@ -3,20 +3,12 @@
     public class Messenger
     {
         string message;
-        public string MessageForUSFormat(bool result)
-        {
-            message = "Input Date format set to default";
-            if (result)
-            {
-                message = "Input Date format set to US";
-            }
-            return message;
-
-        }
+        
+        
 
         public string MessageIncorrectDateFormat()
         {
-            return message = "Incorrect date format. Changing format to default (dd/mm/yyyy)";
+            return message = "Changing format to default (dd/mm/yyyy)";
         }
 
 
@@ -26,14 +18,22 @@
             return message = "You have entered an incorrect value.";
         }
 
-        public string MessageTheSameValue()
+       
+
+        public string MessageBeginning()
         {
-            return message = "You have entered the same dates. Printing just one.";
+            return message = "Do you want to see all acceptable cultures (type yes), or do you want to use your current culture (type anything)?";
         }
 
-        public string MessageSomethingWentWrong()
+        public string MessageTypeFormatShortcut()
         {
-            return message = "Something went wrong :(";
+            return message = "Please, enter a culture shortcut, or type 'default' to use current culture:";
         }
+
+        public string MessageEnterDate()
+        {
+            return message = "Enter a date: ";
+        }
+      
     }
 }

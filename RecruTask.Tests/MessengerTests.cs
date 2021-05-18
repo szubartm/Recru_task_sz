@@ -6,33 +6,13 @@ namespace RecruTask.Tests
     [TestClass]
     public class MessengerTests
     {
-        [TestMethod]
-        public void MessageForUSFormat_IfTrue_ReturnMessage()
-        {
-            Messenger messenger = new Messenger();
-            string wantedMessage = "Input Date format set to US";
-
-            var result = messenger.MessageForUSFormat(true);
-
-            Assert.AreEqual(result, wantedMessage);
-        }
-
-        [TestMethod]
-        public void MessageForUSFormat_IfFalse_ReturnMessage()
-        {
-            Messenger messenger = new Messenger();
-            string wantedMessage = "Input Date format set to default";
-
-            var result = messenger.MessageForUSFormat(false);
-
-            Assert.AreEqual(result, wantedMessage);
-        }
+       
 
         [TestMethod]
         public void MessageIncorrectFirstDateFormat_ReturnMessage()
         {
             Messenger messenger = new Messenger();
-            string wantedMessage = "Incorrect date format. Changing format to default (dd/mm/yyyy)";
+            string wantedMessage = "Changing format to default (dd/mm/yyyy)";
 
             var result = messenger.MessageIncorrectDateFormat();
 
@@ -53,38 +33,40 @@ namespace RecruTask.Tests
         }
 
         [TestMethod]
-        public void MessageTheSameValue_ReturnMessage()
+        public void MessageBeginning_ReturnMessage()
         {
             Messenger messenger = new Messenger();
-            string wantedMessage = "You have entered the same dates. Printing just one.";
+            string wantedMessage = "Do you want to see all acceptable cultures (type yes), or do you want to use your current culture (type anything)?";
 
-            var result = messenger.MessageTheSameValue();
+            var result = messenger.MessageBeginning();
 
             Assert.AreEqual(result, wantedMessage);
         }
 
         [TestMethod]
-        public void MessageForUSFormat_UserTypedYes_ReturnMessage()
+        public void MessageTypeFormatShortcut_ReturnMessage()
         {
-            var message = new Messenger();
+            Messenger messenger = new Messenger();
+            string wantedMessage = "Please, enter a culture shortcut, or type 'default' to use current culture:";
 
-            var result = message.MessageForUSFormat(true);
-            var wantedResult = "Input Date format set to US";
+            var result = messenger.MessageTypeFormatShortcut();
 
-            Assert.AreEqual(result, wantedResult);
-
+            Assert.AreEqual(result, wantedMessage);
         }
 
         [TestMethod]
-        public void MessageForUSFormat_UserTypedNo_ReturnMessage()
+        public void MessageEnterDate_ReturnMessage()
         {
-            var message = new Messenger();
+            Messenger messenger = new Messenger();
+            string wantedMessage = "Enter a date: ";
 
-            var result = message.MessageForUSFormat(false);
-            var wantedResult = "Input Date format set to default";
+            var result = messenger.MessageEnterDate();
 
-            Assert.AreEqual(result, wantedResult);
-
+            Assert.AreEqual(result, wantedMessage);
         }
+
+
+
+
     }
 }

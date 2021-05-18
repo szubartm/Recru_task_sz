@@ -49,11 +49,12 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateFormatCheckerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MessengerTests.cs" />
-    <Compile Include="DateHandlerTests.cs" />
-    <Compile Include="DateHandlerCurrentCultureTests.cs" />
+    <Compile Include="DateConverterTests.cs" />
+    <Compile Include="DatePrinterTests.cs" />
+    <Compile Include="FormatHandlerTests.cs" />
+    <Compile Include="ExistingCulturesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
