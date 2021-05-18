@@ -12,7 +12,7 @@ namespace RecruTask.Tests
         public void MessageIncorrectFirstDateFormat_ReturnMessage()
         {
             Messenger messenger = new Messenger();
-            string wantedMessage = "Changing format to default (dd/mm/yyyy)";
+            string wantedMessage = "Changing format to Your current culture format";
 
             var result = messenger.MessageIncorrectDateFormat();
 

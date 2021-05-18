@@ -8,7 +8,7 @@
 
         public string MessageIncorrectDateFormat()
         {
-            return message = "Changing format to default (dd/mm/yyyy)";
+            return message = "Changing format to Your current culture format";
         }
 
 
