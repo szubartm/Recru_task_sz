@@ -14,9 +14,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 12, 10);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime1.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -29,9 +29,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 11, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime2.ToString(currentCultureDatetimeFormat.ShortDatePattern) + "-" + dateTime1.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -44,9 +44,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 11, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime1.ToString(currentCultureDatetimeFormat.ShortDatePattern) + "-" + dateTime2.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -59,9 +59,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 11, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime2.ToString("dd.MM", currentCultureDatetimeFormat) + "-" + dateTime1.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -73,9 +73,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 11, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime1.ToString("dd.MM", currentCultureDatetimeFormat) + "-" + dateTime2.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -88,9 +88,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 09, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime1.ToString("dd", currentCultureDatetimeFormat) + "-" + dateTime2.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);
@@ -103,9 +103,9 @@ namespace RecruTask.Tests
             DateTime dateTime2 = new DateTime(2020, 09, 11);
             DateTimeFormatInfo currentCultureDatetimeFormat = CultureInfo.CurrentCulture.DateTimeFormat;
             string expectedResult = dateTime2.ToString("dd", currentCultureDatetimeFormat) + "-" + dateTime1.ToString(currentCultureDatetimeFormat.ShortDatePattern);
-            DatePrinter datePrinter = new DatePrinter();
+            DateFormatting datePrinter = new DateFormatting();
 
-            string result = datePrinter.DatePrinting(dateTime1, dateTime2);
+            string result = datePrinter.DateToString(dateTime1, dateTime2);
 
 
             Assert.AreEqual(expectedResult, result);

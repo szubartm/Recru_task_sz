@@ -11,7 +11,7 @@ namespace RecruTask.Tests
         public void DateFormatInfo_ExistingCulture_ReturnCorrectCulture()
         {
             string culture = "smn";
-            FormatHandler formatHandler = new FormatHandler();
+            DateCultureFormat formatHandler = new DateCultureFormat();
             DateTimeFormatInfo expectedResult = CultureInfo.CreateSpecificCulture(culture).DateTimeFormat;
 
 
@@ -23,7 +23,7 @@ namespace RecruTask.Tests
         public void DateFormatInfo_NotExistingCulture_ReturnCurrentCulture()
         {
             string culture = "aaaaaaa";
-            FormatHandler formatHandler = new FormatHandler();
+            DateCultureFormat formatHandler = new DateCultureFormat();
             DateTimeFormatInfo expectedResult = CultureInfo.CurrentCulture.DateTimeFormat;
 
 

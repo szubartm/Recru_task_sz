@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecruTask
 {
-    public class DateFormats
+    public class DateAllFormats
     {
         CultureInfo[] allCultures = CultureInfo.GetCultures(CultureTypes.AllCultures);
 

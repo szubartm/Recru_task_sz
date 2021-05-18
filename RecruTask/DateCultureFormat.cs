@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecruTask
 {
-    public class FormatHandler
+    public class DateCultureFormat
     {
         ExistingCultures existingCultures = new ExistingCultures();
       

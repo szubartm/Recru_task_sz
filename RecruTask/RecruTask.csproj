@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExistingCultures.cs" />
-    <Compile Include="FormatHandler.cs" />
-    <Compile Include="DateFormats.cs" />
-    <Compile Include="DatePrinter.cs" />
+    <Compile Include="DateCultureFormat.cs" />
+    <Compile Include="DateAllFormats.cs" />
+    <Compile Include="DateFormatting.cs" />
     <Compile Include="DateConverter.cs" />
     <Compile Include="Messenger.cs" />
     <Compile Include="Program.cs" />
